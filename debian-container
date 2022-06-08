@@ -1,0 +1,20 @@
+## change mirrors to berkeley here
+
+apt update && apt upgrade -y
+apt install git npm sudo
+
+## download and execute bash script here
+curl | bash
+wget
+
+## add aliases
+
+if os = ubuntu/debian then
+touch ~/.bash_aliases
+else
+touch ~/.alias
+fi
+
+if os = 
+
+## configure sudo
