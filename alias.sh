@@ -19,7 +19,7 @@ list_directories() {
   fi
 
   # Use the find command to list only directories in the specified path
-  find "$list_path" -maxdepth 1 -type d
+  find "$list_path" -maxdepth 1 -type d | sort | columnn
 }
 alias lsd="list_directories"
 
@@ -47,3 +47,6 @@ alias resetdhcp='sudo dhclient -r && sudo dhclient'
 
 # find clock speed of CPU from the terminal
 alias mhz='cat /proc/cpuinfo | grep MHz'
+
+# Easy CLI pastebin
+alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
