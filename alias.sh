@@ -19,7 +19,7 @@ list_directories() {
   fi
 
   # Use the find command to list only directories in the specified path
-  find "$list_path" -maxdepth 1 -type d | sort | columnn
+  find "$list_path" -maxdepth 1 -type d | sort | column
 }
 alias lsd="list_directories"
 
